@@ -4,16 +4,11 @@ import ListNewsItem from './ListNewsItem';
 
 export default class NewsList extends Component {
   render() {
-    let i = 0;
     return (
       <div className="flex justify-center pb-8 z-20">
         <div>
           {this.props.articles.map((article) => (
-            <ListNewsItem
-              article={article}
-              key={i++}
-              mainState={this.props.mainState}
-            />
+            <ListNewsItem key={article.publishedAt} article={article} />
           ))}
         </div>
       </div>

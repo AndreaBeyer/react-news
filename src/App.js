@@ -10,14 +10,14 @@ import {
 
 import Details from './components/Details';
 import Footer from './components/Footer';
-import RouterToHome from './components/RouterToHome';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="bg-slate-800 max-w-full h-full min-h-screen font-mono text-white overflow-hidden">
       <Router>
         <Routes>
-          <Route path="/" element={<RouterToHome />} exact />
+          <Route path="/" element={<Home />} exact />
           <Route path="/details" element={<Details />} />
         </Routes>
       </Router>
