@@ -129,8 +129,6 @@ export default class Home extends React.Component {
             articles: articles,
             buttonText: "Effacer 🪄",
           });
-
-          console.log(articles);
         })
         .catch(function (error) {
           console.error(error);

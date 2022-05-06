@@ -29,8 +29,6 @@ export default function Details() {
       />
     );
   }
-
-  console.log();
   return (
     <div>
       <Link to="/">
@@ -39,7 +37,7 @@ export default function Details() {
         </section>
       </Link>
 
-      <div className="rounded-xl bg-white text-black my-3 mt-20 py-8 flex flex-col justify-center items-center mx-2">
+      <div className="rounded-xl bg-white text-black my-3 mt-20 py-8  mx-7 flex flex-col justify-center items-center">
         {img}
         <h1 className=" font-bold p-5 py-9 flex-auto float-right text-center">
           {location.state.article.title}
@@ -49,7 +47,7 @@ export default function Details() {
           {location.state.article.excerpt}
         </p>
 
-        <div>
+        <div className="flex content-center justify-center">
           <a
             href={location.state.article.link}
             target="_blank"
@@ -57,11 +55,19 @@ export default function Details() {
           >
             <button
               type="button"
-              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-64 h-12"
+              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-28 h-12 sm:w-64"
             >
               Voir le site
             </button>
           </a>
+
+          <button
+            type="button"
+            className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-64 h-12"
+            onClick={() => history.back()}
+          >
+            Retour à l'accueil
+          </button>
         </div>
       </div>
     </div>
