@@ -55,7 +55,7 @@ export default function Details() {
           >
             <button
               type="button"
-              className="text-white bg-gray-800 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-28 h-12 sm:w-64"
+              className="text-white bg-gray-800 border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-28 h-12 sm:w-64"
             >
               Voir le site
             </button>
@@ -63,7 +63,7 @@ export default function Details() {
 
           <button
             type="button"
-            className="bg-gray-800 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-64 h-12"
+            className="text-white bg-gray-800 border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 w-28 h-12 sm:w-64"
             onClick={() => history.back()}
           >
             Retour à l'accueil
