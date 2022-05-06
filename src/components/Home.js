@@ -5,6 +5,7 @@ import { FaArrowCircleUp } from 'react-icons/fa';
 import { styled } from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
 
+import Footer from './Footer';
 import NewsList from './NewsList';
 
 const CssTextField = styled(TextField)({
@@ -39,18 +40,18 @@ const CssTextField = styled(TextField)({
   },
 });
 
-/**
- * Adds two numbers together.
- * @param {int} e The first number.
- */
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      articles: [],
-      search: "",
-      buttonText: "Dernières Actualités 🚀",
-    };
+    if (this.props.mainState) {
+      this.state = this.props.mainState;
+    } else {
+      this.state = {
+        articles: [],
+        search: "",
+        buttonText: "Dernières Actualités 🚀",
+      };
+    }
   }
 
   handleNews = () => {
@@ -210,11 +211,12 @@ export default class Home extends React.Component {
             </button>
           </div>
 
-          <NewsList articles={this.state.articles} />
+          <NewsList articles={this.state.articles} mainState={this.state} />
           <FaArrowCircleUp
             className="scrollTop text-slate-800 bg-white border-2 border-white rounded-full w-16 h-16 flex fixed bottom-14 md:right-14 right-6 cursor-pointer"
             onClick={this.scrollTop}
           />
+          <Footer />
         </main>
       </div>
     );

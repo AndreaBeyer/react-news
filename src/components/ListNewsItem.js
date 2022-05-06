@@ -31,7 +31,10 @@ export default class ListNewsItem extends Component {
       );
     }
     return (
-      <Link to="/details" state={{ article: this.props.article }}>
+      <Link
+        to="/details"
+        state={{ article: this.props.article, mainState: this.props.mainState }}
+      >
         <div className="rounded-xl bg-white text-black my-3 py-4 flex justify-center items-center mx-2 sm:mx-40">
           {img}
           <span className=" p-5 flex-auto float-right text-center">
