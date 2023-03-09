@@ -73,7 +73,7 @@ export default class Home extends React.Component {
         url: "https://api.newscatcherapi.com/v2/search",
         params: {
           q: this.state.search,
-          lang: "fr",
+          lang: "en",
           sort_by: "relevancy",
           page: "1",
         },
@@ -107,8 +107,8 @@ export default class Home extends React.Component {
         method: "GET",
         url: "https://api.newscatcherapi.com/v2/latest_headlines",
         params: {
-          countries: "FR",
-          lang: "fr",
+          countries: "EN",
+          lang: "en",
         },
         headers: {
           "x-api-key": "ZPcV5LnxuvSDctzSRzL9qlGI_cN25LVbfZrcr49k03E",
