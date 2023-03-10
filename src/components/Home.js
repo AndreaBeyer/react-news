@@ -7,6 +7,8 @@ import TextField from '@mui/material/TextField';
 
 import NewsList from './NewsList';
 
+const apiKey = Base64.decode('ZmFGbzFLZDE1TEdjVWFaRWZsRkMyY0ZPaEFoQXg4UHd4MldoWEZmSmN1TQ==');
+
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
     color: "#20293C",
@@ -78,7 +80,7 @@ export default class Home extends React.Component {
           page: "1",
         },
         headers: {
-          "x-api-key": "TRjB_A4dkYEFra2_XOgSBBZslvZ-she-Zr2L6KLf81I",
+          "x-api-key": apiKey,
         },
       };
 
@@ -111,7 +113,7 @@ export default class Home extends React.Component {
           lang: "fr",
         },
         headers: {
-          "x-api-key": "TRjB_A4dkYEFra2_XOgSBBZslvZ-she-Zr2L6KLf81I",
+          "x-api-key": apiKey,
         },
       };
 
