@@ -41,10 +41,6 @@ const CssTextField = styled(TextField)({
   },
 });
 
-/**
- * Adds two numbers together.
- * @param {int} e The first number.
- */
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
