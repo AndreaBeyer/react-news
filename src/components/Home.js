@@ -7,7 +7,7 @@ import TextField from '@mui/material/TextField';
 
 import NewsList from './NewsList';
 
-const apiKey = Base64.decode('ZmFGbzFLZDE1TEdjVWFaRWZsRkMyY0ZPaEFoQXg4UHd4MldoWEZmSmN1TQ==');
+const apiKey = atob('ZmFGbzFLZDE1TEdjVWFaRWZsRkMyY0ZPaEFoQXg4UHd4MldoWEZmSmN1TQ==');
 
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
